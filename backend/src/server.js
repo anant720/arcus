@@ -16,14 +16,16 @@ const app = express();
 
 // ── CORS first — must be before Helmet so preflight OPTIONS gets correct headers ──
 const allowedOrigins = [
-  env.frontendOrigin,          // e.g. http://localhost:5173
-  'http://localhost',          // Old Android Capacitor Origin
-  'https://localhost',         // New Android Capacitor Origin
-  'capacitor://localhost',     // iOS Capacitor Origin
-  'http://192.168.1.19:5173',  // Local network IP (Vite)
-  'http://192.168.31.73:5173', // New Local network IP (Vite)
-  'http://192.168.31.73',      // New Local network IP for Capacitor
-  'https://arcus-api.onrender.com', // Production backend
+  env.frontendOrigin,
+  'http://localhost',
+  'https://localhost',
+  'capacitor://localhost',
+  'http://192.168.1.19:5173',
+  'http://192.168.31.73:5173',
+  'http://192.168.31.73',
+  'https://arcus-yz6a.onrender.com',
+  'https://arcus-landing.vercel.app',
+  null, // allow direct APK requests with no Origin header
 ];
 
 app.use(
