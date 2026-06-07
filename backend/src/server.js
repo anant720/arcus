@@ -13,6 +13,7 @@ import profileRoutes from './routes/profile.routes.js';
 import otaRoutes from './routes/ota.routes.js';
 
 const app = express();
+app.set('trust proxy', 1);
 
 // ── CORS first — must be before Helmet so preflight OPTIONS gets correct headers ──
 const allowedOrigins = [
