@@ -24,7 +24,7 @@ const allowedOrigins = [
   'http://192.168.31.73:5173',
   'http://192.168.31.73',
   'https://arcus-yz6a.onrender.com',
-  'https://arcus-landing.vercel.app',
+  'https://arcus-topaz.vercel.app',
   null, // allow direct APK requests with no Origin header
 ];
 
