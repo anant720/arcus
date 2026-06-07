@@ -106,12 +106,6 @@ router.post('/google', async (req, res) => {
       profile = await ensureUserProfileDoc({ uid: googleUid, email, displayName, photoURL });
     }
 
-    // Check if they have a hard password set
-    const cred = await getCredentialByEmail(email);
-    if (!cred) {
-      profile.needsPassword = true;
-    }
-
     const accessToken = signAccessToken({ uid: profile.uid, email, role: profile.role || 'student' });
     const { refreshToken } = await createRefreshSession({ uid: profile.uid, email, provider: 'google' });
     setSessionCookies(res, refreshToken);
@@ -303,13 +297,6 @@ router.get('/me', requireAuth, async (req, res) => {
       return res.status(404).json({ message: 'Profile not found' });
     }
     const profile = profileSnap.data();
-    
-    // Check if they need a password
-    const cred = await getCredentialByEmail(profile.email);
-    if (!cred) {
-      profile.needsPassword = true;
-    }
-
     return res.json({ user: profile });
   } catch (error) {
     return res.status(500).json({ message: error.message || 'Failed to load current user' });
