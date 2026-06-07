@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arcus — Campus Companion for MIT-ADT University</title>
+  <meta name="description" content="Arcus is the all-in-one smart campus companion app for MIT-ADT University students. Download the free Android app today." />
+  <meta property="og:title" content="Arcus — Campus Companion" />
+  <meta property="og:description" content="Faculty directory, announcements, tasks, and more — in one beautifully designed Android app." />
+  <meta property="og:image" content="/og-image.png" />
+  <meta name="theme-color" content="#0A84FF" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+  <!-- Security Headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,900;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════ NAV ═══════════════════ -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="Arcus home">
+        <svg width="28" height="28" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 65 A 50 50 0 0 1 85 65" stroke="#0A84FF" stroke-width="9" stroke-linecap="round"/>
+          <path d="M24 65 A 38 38 0 0 1 76 65" stroke="#0A84FF" stroke-width="3.5" stroke-linecap="round" opacity="0.35"/>
+          <path d="M33 65 A 26 26 0 0 1 67 65" stroke="#0A84FF" stroke-width="2" stroke-linecap="round" opacity="0.15"/>
+          <circle cx="50" cy="15" r="6" fill="#0A84FF"/>
+          <line x1="50" y1="21" x2="50" y2="55" stroke="#0A84FF" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+        </svg>
+        <span>arcus</span>
+      </a>
+      <a href="#download" class="nav-cta" id="nav-download-btn">Download App</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ HERO ═══════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+      <div class="hero-grid"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge" id="hero-badge">
+        <span class="badge-dot"></span>
+        <span>v1.1.0 Beta · Now Available</span>
+      </div>
+
+      <h1 class="hero-headline" id="hero-headline">
+        Your campus,<br />
+        <span class="headline-gradient">beautifully simple.</span>
+      </h1>
+
+      <p class="hero-sub" id="hero-sub">
+        Arcus is the all-in-one campus companion for MIT-ADT University.<br class="hero-br"/>
+        Faculty directory, announcements, tasks & more — right in your pocket.
+      </p>
+
+      <div class="hero-actions" id="hero-actions">
+        <a href="#download" class="btn-primary" id="hero-download-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7,10 12,15 17,10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Download for Android
+        </a>
+        <a href="#features" class="btn-secondary" id="hero-features-btn">
+          Learn More
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6,9 12,15 18,9"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="hero-meta">
+        <div class="meta-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0A84FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Free · No Ads</span>
+        </div>
+        <div class="meta-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0A84FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Android 8.0+</span>
+        </div>
+        <div class="meta-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0A84FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>MIT-ADT University Only</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phone Mockup -->
+    <div class="hero-mockup" id="hero-mockup">
+      <div class="phone">
+        <div class="phone-inner">
+          <div class="phone-screen">
+            <!-- Simulated App UI -->
+            <div class="app-screen">
+              <div class="app-header">
+                <div class="app-greeting">
+                  <span class="app-greeting-text">Good morning 👋</span>
+                  <div class="app-avatar"></div>
+                </div>
+                <div class="app-title">Faculty Directory</div>
+              </div>
+              <div class="app-search">
+                <div class="search-icon">⌕</div>
+                <span>Search faculty...</span>
+              </div>
+              <div class="app-cards">
+                <div class="app-card card-blue">
+                  <div class="card-dept">CSE</div>
+                  <div class="card-name">Dr. A. Sharma</div>
+                  <div class="card-cabin">Cabin B-204</div>
+                </div>
+                <div class="app-card card-maroon">
+                  <div class="card-dept">VC</div>
+                  <div class="card-name">Prof. R. Kulkarni</div>
+                  <div class="card-cabin">Cabin A-001</div>
+                </div>
+                <div class="app-card card-dark">
+                  <div class="card-dept">MECH</div>
+                  <div class="card-name">Dr. V. Patil</div>
+                  <div class="card-cabin">Cabin C-112</div>
+                </div>
+                <div class="app-card card-teal">
+                  <div class="card-dept">IT</div>
+                  <div class="card-name">Mrs. S. Joshi</div>
+                  <div class="card-cabin">Cabin B-110</div>
+                </div>
+              </div>
+              <div class="app-nav-bar">
+                <div class="app-nav-item active">
+                  <div class="nav-dot active-dot"></div>
+                </div>
+                <div class="app-nav-item">
+                  <div class="nav-dot"></div>
+                </div>
+                <div class="app-nav-item">
+                  <div class="nav-dot"></div>
+                </div>
+                <div class="app-nav-item">
+                  <div class="nav-dot"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FEATURES ═══════════════════ -->
+  <section class="features" id="features">
+    <div class="section-inner">
+      <div class="section-label">What's Inside</div>
+      <h2 class="section-title">Everything your campus life needs</h2>
+      <p class="section-sub">Built specifically for MIT-ADT University students, Arcus brings your campus closer.</p>
+
+      <div class="features-grid" id="features-grid">
+        <div class="feature-card" id="feature-1">
+          <div class="feature-icon" style="background: linear-gradient(135deg,#0A84FF22,#0A84FF44);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0A84FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Faculty Directory</h3>
+          <p>Find any faculty member instantly — with cabin number, department, email and rank all in one place.</p>
+        </div>
+
+        <div class="feature-card" id="feature-2">
+          <div class="feature-icon" style="background: linear-gradient(135deg,#30D15822,#30D15844);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#30D158" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <h3>Announcements Hub</h3>
+          <p>Never miss a notice. All official campus announcements delivered to you in real-time.</p>
+        </div>
+
+        <div class="feature-card" id="feature-3">
+          <div class="feature-icon" style="background: linear-gradient(135deg,#FF9F0A22,#FF9F0A44);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF9F0A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <h3>Smart Task Manager</h3>
+          <p>Track assignments, submissions, and deadlines. Stay on top of your academic life effortlessly.</p>
+        </div>
+
+        <div class="feature-card" id="feature-4">
+          <div class="feature-icon" style="background: linear-gradient(135deg,#FF375F22,#FF375F44);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FF375F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3>Beautiful Design</h3>
+          <p>Premium iOS-inspired interface with dark mode, smooth animations, and haptic feedback.</p>
+        </div>
+
+        <div class="feature-card" id="feature-5">
+          <div class="feature-icon" style="background: linear-gradient(135deg,#BF5AF222,#BF5AF244);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#BF5AF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <h3>Native Android</h3>
+          <p>Built with Capacitor for a truly native experience. Fast, smooth, and reliable on all Android devices.</p>
+        </div>
+
+        <div class="feature-card" id="feature-6">
+          <div class="feature-icon" style="background: linear-gradient(135deg,#5E5CE622,#5E5CE644);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#5E5CE6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Secure & Private</h3>
+          <p>Login with your MIT-ADT email. Your data stays protected with JWT auth and Firebase security.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ DOWNLOAD ═══════════════════ -->
+  <section class="download" id="download">
+    <div class="download-bg">
+      <div class="dl-orb dl-orb-1"></div>
+      <div class="dl-orb dl-orb-2"></div>
+    </div>
+
+    <div class="section-inner">
+      <div class="download-card" id="download-card">
+        <div class="download-icon">
+          <svg width="48" height="48" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 65 A 50 50 0 0 1 85 65" stroke="white" stroke-width="9" stroke-linecap="round"/>
+            <path d="M24 65 A 38 38 0 0 1 76 65" stroke="white" stroke-width="3.5" stroke-linecap="round" opacity="0.5"/>
+            <path d="M33 65 A 26 26 0 0 1 67 65" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.25"/>
+            <circle cx="50" cy="15" r="6" fill="white"/>
+            <line x1="50" y1="21" x2="50" y2="55" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+          </svg>
+        </div>
+        <h2 class="download-title">Download Arcus</h2>
+        <p class="download-sub">Version 1.1.0 Beta · Android · Free</p>
+
+        <div class="download-requirements">
+          <div class="req-item">
+            <span class="req-label">Requires</span>
+            <span class="req-value">Android 8.0 (Oreo) or higher</span>
+          </div>
+          <div class="req-item">
+            <span class="req-label">Size</span>
+            <span class="req-value">6.34 MB</span>
+          </div>
+          <div class="req-item">
+            <span class="req-label">Access</span>
+            <span class="req-value">MIT-ADT University email required</span>
+          </div>
+        </div>
+
+        <a href="/public/arcus-latest.apk" class="download-btn" id="main-download-btn" download>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7,10 12,15 17,10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Download APK (Android)
+        </a>
+
+        <p class="download-note">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <span>Allow "Install from unknown sources" in Android settings before installing.</span>
+        </p>
+
+        <div class="install-steps">
+          <h4>How to install</h4>
+          <ol>
+            <li>Tap <strong>Download APK</strong> above</li>
+            <li>Open the downloaded file from your notifications</li>
+            <li>If prompted, tap <strong>Settings</strong> → enable <strong>Install unknown apps</strong></li>
+            <li>Tap <strong>Install</strong> and open Arcus</li>
+            <li>Log in with your <strong>MIT-ADT University email</strong></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 65 A 50 50 0 0 1 85 65" stroke="#0A84FF" stroke-width="9" stroke-linecap="round"/>
+          <path d="M24 65 A 38 38 0 0 1 76 65" stroke="#0A84FF" stroke-width="3.5" stroke-linecap="round" opacity="0.35"/>
+          <circle cx="50" cy="15" r="6" fill="#0A84FF"/>
+          <line x1="50" y1="21" x2="50" y2="55" stroke="#0A84FF" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+        </svg>
+        <span>arcus</span>
+      </div>
+      <p class="footer-text">Built with ❤️ for MIT-ADT University students</p>
+      <p class="footer-sub">© 2026 Arcus. Campus Companion · v1.1.0 Beta</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

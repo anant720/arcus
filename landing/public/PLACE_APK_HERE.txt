@@ -1,0 +1,13 @@
+# Drop your APK file here
+
+Place your signed APK file in this folder and name it:
+  arcus-latest.apk
+
+The download button on the landing page points to:
+  /public/arcus-latest.apk
+
+After adding the APK here, push to GitHub and it will be automatically
+served by Vercel as a static file.
+
+Alternatively, you can host the APK on Google Drive and update
+the download link in index.html to point to the public share URL.
