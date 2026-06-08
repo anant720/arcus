@@ -1,5 +1,5 @@
 {
   "latestVersion": "1.0.1",
-  "apkUrl": "https://raw.githubusercontent.com/anant720/arcus-deploy/master/landing/apk/arcus-latest.apk",
+  "apkUrl": "https://raw.githubusercontent.com/anant720/arcus/master/landing/apk/arcus-latest.apk",
   "forceUpdate": false
 }
